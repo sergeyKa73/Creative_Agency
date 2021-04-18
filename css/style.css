@@ -1,0 +1,180 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v15-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-900 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v15-latin_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* poppins-500 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/poppins-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* poppins-900 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/poppins-v15-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v15-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  body {
+      font-style: 'Montserrat', sans-serif;
+      min-width: 320px;
+      color: #1d1d1d1d;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  section {
+      padding: 100px 0;
+  }
+
+  h3{
+	font-style: italic;
+	font-size: 42px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+h4{
+	font-weight: 600;
+	font-size: 44px;
+	margin-bottom: 20px;
+}
+.scrollToTop{
+	position: fixed;
+	bottom: 60px;
+	right: 50px;
+	border-radius: 4px;
+	display: none;
+	font-size: 32px;
+	height: 50px;
+	width: 50px;
+	z-index: 1001;
+	color: #fff;
+	transition: all .5s;
+	background-color: #da1757;
+	border: 0;
+	cursor: pointer;
+}
+.scrollToTop:hover{
+	background-color: #fff;
+	text-decoration: none;
+	outline: none;
+	color: #da1757;
+	border: 1px solid #da1757;
+}
+
+/*start header*/
+.main-header{
+	background: url(../img/main1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	min-height: 700px;
+	position: relative;
+}
+.main-header .navbar-toggler{
+	color: #fff;
+}
+.main-header .navbar-brand,
+.main-header ul li a{
+	color: #fff;
+	font-weight: 600;
+}
+.main-header .navbar-brand{
+	font-size: 41px;
+}
+.main-header ul li a{
+	font-size: 17px;
+}
+.main-header ul li a::after{
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	height: 1px;
+	transform: scale(0);
+	transition: all .3s;
+}
+.main-header ul li a:hover::after{
+	transform: scale(1);
+}
+.main-header-text{
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	max-width: 600px;
+	color: #fff;
+	padding: 20px;
+}
+.main-header-buttons{
+	padding-left: 30px;
+}
+.btn{
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+.main-header-buttons .btn{
+	height: 60px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-right: 20px;
+	margin-top: 30px;
+	opacity: .8;
+	box-shadow: 0 4px 16px rgba(0,0,0,.35);
+	transition: all .5s;
+}
+.main-header-buttons .btn:hover{
+	color: #fff;
+	opacity: 1;
+}
+.btn-pink{
+	background-color: #f42267;
+}
+.btn-violet{
+	background-color: #69328e;
+}
