@@ -109,7 +109,7 @@ h4{
 
 /*start header*/
 .main-header{
-	background: url(/img/main1.jpg) center no-repeat;
+	background: url(../img/main1.jpg) center no-repeat;
 	background-size: cover;
 	height: 100vh;
 	min-height: 700px;
